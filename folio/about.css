@@ -1,0 +1,25 @@
+/* ------------------------------------------------------about--------------------------------------------------------- */
+
+body{
+    background-image: url(img/banner-bg-Photoroom.png);
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 70%;
+    margin: auto;
+}
+ 
+a:active,a:hover,a:link,a:visited{
+    color: white;
+}
+
+.navbar li{
+    margin-left: 5vw;
+}
+
+.about-1{
+    width: 79%;
+    margin: auto;
+    color: white;
+    margin-top: 8vh;
+}

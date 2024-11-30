@@ -1,0 +1,44 @@
+
+
+body{
+    background-image: url(img/banner-bg-Photoroom.png);
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 70%;
+    margin: auto;
+}
+ 
+a:active,a:hover,a:link,a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li{
+    margin-left: 5vw;
+}
+
+.portfolio{
+    width: 80%;
+    margin: auto;
+    margin-top: 8vh;
+}
+
+.port{
+    display: flex;
+    gap: 5vw;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+}
+
+.port1{
+    border-radius: 30px;
+}
+
+.porto{
+    display: flex;
+    gap: 19vw;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+}
