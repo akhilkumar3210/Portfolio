@@ -1,0 +1,117 @@
+
+body{
+    background-image: url(img/banner-bg-Photoroom.png);
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 70%;
+    margin: auto;
+}
+ 
+a:active,a:hover,a:link,a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li{
+    margin-left: 5vw;
+}
+
+
+.service{
+    width: 89%;
+    margin: auto;
+}
+
+.ser-ic{
+    text-align: center;
+    margin-top: 8vh;
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 10vh;
+    margin-left: -2vw;
+}
+
+.ser-ic a:hover{
+    color: #000000;
+   
+}
+
+.s1{
+    border: 6px solid orange;
+    border-radius: 100%;
+    width: 250px;
+    height: 200px;
+    padding-top: 28px;
+    padding-bottom: 100px;
+
+}
+
+.s2{
+    border: 6px solid orange;
+    border-radius: 100%;
+    width: 250px;
+    height: 200px;
+    padding-top: 28px;
+    padding-bottom: 100px;
+
+}
+
+.s3{
+    border: 6px solid orange;
+    border-radius: 100%;
+    width: 250px;
+    height: 200px;
+    padding-top: 30px;
+
+}
+
+.s4{
+    border: 6px solid orange;
+    border-radius: 100%;
+    width: 250px;
+    height: 200px;
+    padding-top: 30px;
+
+}
+
+.btn1{
+    text-align: center;
+    padding: 0.8vw;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.footer{
+    width: 100%;
+    margin-top: 80vh;   
+    background-color: rgb(1, 17, 1);
+    height: 200px;
+    
+}
+
+.foot{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+   
+}
+
+.f1{
+    width: 50px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    margin-top: 10vh;
+}
+
+.text-5{
+    margin-top: 4vh;
+    text-align: center;
+}

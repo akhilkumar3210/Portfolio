@@ -1,0 +1,84 @@
+
+body{
+    background-image: url(img/banner-bg-Photoroom.png);
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 70%;
+    margin: auto;
+}
+ 
+a:active,a:hover,a:link,a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li{
+    margin-left: 5vw;
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+    
+}
+
+
+.frm{
+    margin-top: 5vh;
+}
+
+.int1{
+    width: 60%;
+    height: 50px;
+}
+
+.int2{
+    width: 60%;
+    height: 100px;
+}
+
+.btn3{
+    text-align: center;
+    padding: 0.8vw;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    width: 100px;
+    background-color: #ff6b08;
+    border: none;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 80vh;
+    background-color: rgb(1, 17, 1);
+    height: 200px;
+    
+}
+
+.foot{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+   
+}
+
+.f1{
+    width: 50px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    margin-top: 10vh;
+}
+
+.text-5{
+    margin-top: 3vh;
+    text-align: center;
+}
