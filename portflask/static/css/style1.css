@@ -1,12 +1,14 @@
 .content {
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: 95vw;
+    width: 98%;
     height: 100%;
 }
 
 .navbar {
-    width: 70%;
+    width: 40%;
     margin: auto;
+
 }
 
 ul li a:active,
@@ -23,7 +25,7 @@ a:visited {
 .text-1 {
     width: 80%;
     margin: auto;
-    margin-top: 14vh;
+    margin-top: 13vh;
     color: white;
 }
 
@@ -35,28 +37,28 @@ a:visited {
 
 .avatar {
     position: relative;
-    bottom: 36vh;
+    bottom: 29vh;
     margin: auto;
-    margin-left: 56vw;
+    margin-left: 63vw;
     
 
 }
 
 .social {
     position: relative;
-    width: 40%;
+    width: 80%;
     margin: auto;
     margin-top: -10px;
-    margin-left: 10vw;
+    margin-left: 8.5vw;
     text-decoration: none;
     justify-content: space-between;
-    gap: 2vw;
+    gap: 5vw;
 
 }
 
 .about {
 
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-bottom: 15vh;
    
@@ -70,7 +72,7 @@ a:visited {
 }
 
 .service{
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-bottom: 8vh;
 }
@@ -88,40 +90,34 @@ a:visited {
 }
 
 .s1{
-    border: 6px solid orange;
-    border-radius: 100%;
-    width: 250px;
-    height: 200px;
-    padding-top: 28px;
-    padding-bottom: 100px;
+    border: 3px solid rgb(46, 46, 46);
+    width: 300px;
+    height: 220px;
+
 
 }
 
 .s2{
-    border: 6px solid orange;
-    border-radius: 100%;
-    width: 250px;
-    height: 200px;
-    padding-top: 28px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 300px;
+    height: 220px;
     padding-bottom: 100px;
 
 }
 
 .s3{
-    border: 6px solid orange;
-    border-radius: 100%;
-    width: 250px;
-    height: 200px;
-    padding-top: 30px;
+    border: 3px solid rgb(7, 7, 7);
+    width: 300px;
+    height: 220px;
+
 
 }
 
 .s4{
-    border: 6px solid orange;
-    border-radius: 100%;
-    width: 250px;
-    height: 200px;
-    padding-top: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 300px;
+    height: 220px;
+ 
 
 }
 
@@ -134,7 +130,7 @@ a:visited {
 }
 
 .portfolio{
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-bottom: 8vh;
 }
@@ -166,7 +162,7 @@ a:visited {
 }
 
 .contact{
-    width: 80%;
+    width: 70%;
     margin: auto;
     text-align: center;
     
@@ -195,6 +191,11 @@ a:visited {
     width: 100px;
     background-color: #ff6b08;
     border: none;
+}
+
+.resume{
+    text-align: center;
+    padding-top: 50px;
 }
 
 .footer{

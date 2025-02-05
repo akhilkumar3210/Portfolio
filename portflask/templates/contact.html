@@ -31,10 +31,10 @@
                             <a class="nav-link " href="about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio">Portfolio</a>
+                            <a class="nav-link" href="portfolio">Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="service">Service</a>
+                            <a class="nav-link" href="service">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact">Contact</a>
@@ -46,13 +46,22 @@
         <div class="contact">
             <h1><span style="color: orange;">My</span> <u style="color: white;">Contact</u></h1>
             <div class="frm">
-                <form action="" method="post">
+                <form action="/contact" method="post" >
                     <input type="text" name="name" id="" placeholder="Your Name" class="int1"><br><br>
                     <input type="email" name="email" id="" placeholder="Your Email" class="int1"><br><br>
-                    <input type="number" name="number" id="" placeholder="Your Phone" class="int1"><br><br>
+                    <input type="number" name="phone" id="" placeholder="Your Phone" class="int1"><br><br>
                     <input type="text" name="msg" id="" placeholder="Your Message" class="int2"><br><br>
                     <input type="submit" value="Send" class="btn3">
                 </form>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                <div class="alert alert-success" role="alert">
+                    {% for category, message in messages %}
+                    <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% endwith %}
             </div>
         </div>
         <div class="footer">

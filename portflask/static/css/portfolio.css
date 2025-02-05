@@ -3,10 +3,11 @@
 body{
     background-image: url(img/banner-bg-Photoroom.png);
     background-repeat: no-repeat;
+    background-size: 100vw;
 }
 
 .navbar{
-    width: 70%;
+    width: 40%;
     margin: auto;
 }
  
