@@ -1,47 +1,42 @@
-/* ------------------------------------------------------about--------------------------------------------------------- */
-
-body{
-   
+/* Base styles */
+body {
     background-repeat: no-repeat;
     background-size: 100vw;
 }
-.navbar{
+
+.navbar {
     width: 40%;
     margin: auto;
 }
- 
-a:active,a:hover,a:link,a:visited{
+
+a:active, a:hover, a:link, a:visited {
     color: white;
 }
 
-.navbar li{
+.navbar li {
     margin-left: 5vw;
 }
 
-.about-1{
+.about-1 {
     width: 79%;
     margin: auto;
-    color: white;
+    color: rgb(172, 172, 172);
     margin-top: 8vh;
 }
 
-
-.footer{
+.footer {
     width: 100%;
-    margin-top: 80vh;
     background-color: rgb(1, 17, 1);
     height: 200px;
-    
 }
 
-.foot{
+.foot {
     display: flex;
     gap: 2vw;
     justify-content: center;
-   
 }
 
-.f1{
+.f1 {
     width: 50px;
     height: 40px;
     background-color: #000000;
@@ -52,7 +47,123 @@ a:active,a:hover,a:link,a:visited{
     margin-top: 10vh;
 }
 
-.text-5{
+.text-5 {
     margin-top: 4vh;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones in portrait mode) */
+@media (max-width: 600px) {
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar li {
+        margin-left: 3vw;
+    }
+
+    .about-1 {
+        width: 90%;
+        margin-top: 100vh;
+    }
+
+    .footer {
+
+        height: 150px;
+    }
+
+    .f1 {
+        width: 40px;
+        height: 35px;
+        margin-top: 8vh;
+    }
+
+    .text-5 {
+        margin-top: 3vh;
+    }
+    .p{
+        margin-top: -10vh;
+    }
+    .navbar {
+        width: 100%;
+        margin: auto;
+        color: #000000;
+    }
+    
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        width: 60%;
+    }
+
+    .navbar li {
+        margin-left: 4vw;
+    }
+
+    .about-1 {
+        width: 85%;
+        margin-top: 7vh;
+    }
+
+    .footer {
+        margin-top: 75vh;
+        height: 180px;
+    }
+
+    .f1 {
+        width: 45px;
+        height: 38px;
+        margin-top: 9vh;
+    }
+
+    .text-5 {
+        margin-top: 3.5vh;
+    }
+    .navbar {
+        width: 100%;
+        margin: auto;
+        color: #000000;
+    }
+    
+}
+
+/* Large devices (desktops or larger tablets) */
+@media (min-width: 1024px) {
+    .navbar {
+        width: 40%;
+    }
+
+    .navbar li {
+        margin-left: 5vw;
+    }
+
+    .about-1 {
+        width: 79%;
+        margin-top: 8vh;
+    }
+
+    .footer {
+        margin-top: 80vh;
+        height: 200px;
+    }
+
+    .f1 {
+        width: 50px;
+        height: 40px;
+        margin-top: 10vh;
+    }
+
+    .text-5 {
+        margin-top: 4vh;
+    }
+    .navbar {
+        width: 100%;
+        margin: auto;
+        color: #000000;
+    }
+    
 }

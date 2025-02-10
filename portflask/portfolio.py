@@ -3,6 +3,7 @@ from flask_mail import Mail, Message
 
 
 app=Flask(__name__)
+app.secret_key = 'supersecretkey'
 
 # Email configuration
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # SMTP server
@@ -16,9 +17,31 @@ app.config['MAIL_DEFAULT_SENDER'] = ('ak2072719@gmail.com')  # Sender info
 mail = Mail(app)
 
 
-@app.route('/index',methods=['GET'])
+@app.route('/',methods=['GET'])
 def Index():
     return render_template('index.html')
+# @app.route('/conduct',methods=['POST'])
+# def Conduct():
+#         if request.method == "POST":
+#             name = request.form['name']
+#             email = request.form['email']
+#             phone = request.form['phone']
+#             message = request.form['msg']
+
+#             # Create email message
+#             msg = Message(
+#                 subject="Contact Form Submission",
+#                 recipients=['ak2072719@gmail.com'],  # Recipient email
+#                 body=f"Name: {name}\nEmail: {email}\nPhone :{phone} \nMessage: {message}"
+#             )
+#             print(name,email,message)
+#             try:
+#                 mail.send(msg)  # Send the email
+#                 flash("!! Thank You for your response. I will connect with you shortly !!", "success")
+#             except Exception as e:
+#                 print(f"Error: {e}")
+#                 flash("Failed to send message. Please try again.", "danger")
+#         return redirect(url_for('Index'))
 
 @app.route('/about',methods=['GET'])
 def About():
@@ -52,12 +75,11 @@ def Contact():
             print(name,email,message)
             try:
                 mail.send(msg)  # Send the email
-                flash("!! Thank You for your response. I will connect with you ASAP !!", "success")
+                flash("!! Thank You for your response. I will connect with you shortly !!", "success")
             except Exception as e:
                 print(f"Error: {e}")
                 flash("Failed to send message. Please try again.", "danger")
-
         return redirect(url_for('Contact_me'))
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
