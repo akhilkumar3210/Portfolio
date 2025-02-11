@@ -4,9 +4,21 @@ body {
     background-size: 100vw;
 }
 
+.content-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    background-position: center;
+}
+
 .navbar {
-    width: 40%;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
     margin: auto;
+    background-color: transparent;
+    padding: 0;
 }
 
 a:active, a:hover, a:link, a:visited {
@@ -20,8 +32,15 @@ a:active, a:hover, a:link, a:visited {
 .about-1 {
     width: 79%;
     margin: auto;
-    color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
     margin-top: 8vh;
+}
+
+.education{
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding-top: 5vh;
 }
 
 .footer {
@@ -87,7 +106,7 @@ a:active, a:hover, a:link, a:visited {
         margin-top: -10vh;
     }
     .navbar {
-        width: 100%;
+        width: 90%;
         margin: auto;
         color: #000000;
     }
@@ -97,7 +116,7 @@ a:active, a:hover, a:link, a:visited {
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
     .navbar {
-        width: 60%;
+        width: 90%;
     }
 
     .navbar li {
@@ -124,7 +143,7 @@ a:active, a:hover, a:link, a:visited {
         margin-top: 3.5vh;
     }
     .navbar {
-        width: 100%;
+        width: 90%;
         margin: auto;
         color: #000000;
     }
@@ -134,7 +153,7 @@ a:active, a:hover, a:link, a:visited {
 /* Large devices (desktops or larger tablets) */
 @media (min-width: 1024px) {
     .navbar {
-        width: 40%;
+        width: 90%;
     }
 
     .navbar li {
@@ -161,7 +180,7 @@ a:active, a:hover, a:link, a:visited {
         margin-top: 4vh;
     }
     .navbar {
-        width: 100%;
+        width: 90%;
         margin: auto;
         color: #000000;
     }

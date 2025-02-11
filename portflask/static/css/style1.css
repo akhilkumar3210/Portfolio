@@ -1,6 +1,7 @@
-.a{
+.a {
     text-decoration: none;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,6 +24,85 @@ body {
     background-color: transparent;
     padding: 0;
 }
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #444;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #061d03;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.text-1 h3 {
+    animation: moveLeftToRight 2s ease-out;
+}
+
+.text-1 h1 {
+    animation: moveRightToLeft 2s ease-out;
+}
+
+.text-1 .t1 {
+    animation: moveLeftToRight 2s ease-out;
+}
+
 
 .navbar li {
     display: inline-block;
@@ -61,63 +141,75 @@ body {
     .text-1 {
         margin-top: 10vh;
     }
+
     .t1 {
         font-size: 2rem;
     }
 }
 
+
 .avatar {
     position: relative;
-    bottom: 29vh;
     margin: auto;
-    margin-left: 80%;
-    transform: translateX(-50%);
+    margin-left: 78%;
+    bottom: 30vh;
+
 }
 
 @media (max-width: 768px) {
-    .avatar {
-        bottom: 20vh;
-    }
 }
 
 @media (max-width: 430px) {
     .avatar {
         bottom: -1vh;
-        margin-left: 30%;
-        transform: translateX(-50%);
     }
-    .social{
-        padding-left: 30vw;
+
+    .social {
         flex-direction: row;
     }
-    .all{
+
+    .all {
         margin-bottom: 10vh;
     }
+
     .ser-ic {
         flex-direction: column;
         gap: 2vw;
     }
 
-    .s1, .s2, .s3, .s4 {
+    .s1,
+    .s2,
+    .s3,
+    .s4 {
         width: 100%;
         height: auto;
         max-width: 900px;
     }
-    .logo-1{
+
+    .logo-1 {
         width: 200px;
         height: 205px;
     }
-    .logo-1:hover{
-        transform:translateY(-8px);
+
+    .logo-1:hover {
+        transform: translateY(-8px);
+    }
+    .avatar {
+        margin-top: 90%;
+        position: relative;
+        margin: auto;
+     
+        
     }
 }
+
 
 .social {
     width: 90%;
     margin: auto;
     margin-top: -10px;
     text-decoration: none;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 3vw;
     display: flex;
 }
@@ -125,7 +217,7 @@ body {
 @media (max-width: 768px) {
     .social {
         gap: 2vw;
-        
+
     }
 }
 
@@ -161,18 +253,72 @@ body {
     margin-bottom: 10vh;
 }
 
+.ser-ic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.s1,
+.s2,
+.s3,
+.s4 {
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.s1 img,
+.s2 img,
+.s3 img,
+.s4 img {
+    width: 225px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h3 {
+    color: rgb(146, 145, 142);
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.s1:hover img,
+.s2:hover img,
+.s3:hover img,
+.s4:hover img {
+    transform: scale(1.1);
+}
+
+.s1:hover,
+.s2:hover,
+.s3:hover,
+.s4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
 .ser-ic a:hover {
     text-decoration: none;
 }
-.logo-1{
+
+.logo-1 {
     width: 225px;
     height: 205px;
-    
+
 }
-.logo-1:hover{
-    transform:translateY(-8px);
+
+.logo-1:hover {
+    transform: translateY(-8px);
 }
-.s1, .s2, .s3, .s4 {
+
+.s1,
+.s2,
+.s3,
+.s4 {
     border: 3px solid rgb(46, 46, 46);
     width: 100%;
     max-width: 600px;
@@ -182,24 +328,95 @@ body {
 @media (max-width: 768px) {
     .ser-ic {
         flex-direction: column;
-        gap: 2vw;
+        gap: 10vw;
     }
 
-    .s1, .s2, .s3, .s4 {
+    .s1,
+    .s2,
+    .s3,
+    .s4 {
         height: auto;
     }
 }
 
-.resume h2{
+.resume h2 {
     font-size: 2rem;
 }
+
 .portfolio {
     width: 70%;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
-.port, .portto, .porto {
+/* Container styles */
+.port {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Basic styles for each image */
+.img1 {
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+/* Button styling for images */
+.port1,
+.port2,
+.port3 {
+    position: relative;
+}
+
+.port1 a,
+.port2 a,
+.port3 a {
+    display: block;
+    position: relative;
+}
+
+/* Create button-like effect below each image */
+.port1 a::after,
+.port2 a::after,
+.port3 a::after {
+    content: 'View More';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect to move image towards button */
+.port1:hover .img1,
+.port2:hover .img1,
+.port3:hover .img1 {
+    transform: translateY(50px);
+    /* Moves the image down */
+}
+
+/* Show the button when hovering */
+.port1:hover a::after,
+.port2:hover a::after,
+.port3:hover a::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    /* Brings button into view */
+}
+
+
+.port,
+.portto,
+.porto {
     display: flex;
     gap: 10vw;
     margin-top: 8vh;
@@ -212,19 +429,111 @@ body {
     height: auto;
 }
 
+.img1 {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.port div {
+    display: inline-block;
+    margin: 10px;
+}
+
+.port1 a,
+.port2 a,
+.port3 a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img1:hover {
+    animation: borderAnimation 1s infinite;
+    border: 4px solid #3498db;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border: 4px solid transparent;
+    }
+
+    25% {
+        border: 4px solid #3498db;
+    }
+
+    50% {
+        border: 4px solid #e74c3c;
+    }
+
+    75% {
+        border: 4px solid #2ecc71;
+    }
+
+    100% {
+        border: 4px solid #3498db;
+    }
+}
+
+
 @media (max-width: 768px) {
-    .port, .portto, .porto {
+
+    .port,
+    .portto,
+    .porto {
         flex-direction: column;
-        gap: 4vw;
+        gap: 15vh;
     }
 
     .img1 {
         width: 100%;
         height: auto;
     }
+
+    .s1,
+    .s2,
+    .s3,
+    .s4 {
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .s1 img,
+    .s2 img,
+    .s3 img,
+    .s4 img {
+        width: 225px;
+        height: 200px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    h3 {
+        color: rgb(146, 145, 142);
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .s1:hover img,
+    .s2:hover img,
+    .s3:hover img,
+    .s4:hover img {
+        transform: scale(1.1);
+    }
+
+    .s1:hover,
+    .s2:hover,
+    .s3:hover,
+    .s4:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
 }
 
-.btn1, .btn2, .btn3 {
+.btn1,
+.btn2,
+.btn3 {
     text-align: center;
     padding: 1vw;
     border-radius: 10px;
@@ -238,6 +547,7 @@ body {
     border: none;
 }
 
+
 .contact {
     width: 70%;
     margin: auto;
@@ -248,7 +558,8 @@ body {
     margin-top: 5vh;
 }
 
-.int1, .int2 {
+.int1,
+.int2 {
     width: 60%;
     height: 50px;
 }
@@ -258,7 +569,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    .int1, .int2 {
+
+    .int1,
+    .int2 {
         width: 90%;
     }
 
@@ -289,12 +602,12 @@ body {
     width: 50px;
     height: 40px;
     /* background-color: #000000; */
-     border-radius: 50%;
+    border-radius: 50%;
     justify-content: center;
     padding-left: 1vw;
     padding-top: 1vh;
     margin-top: 10vh;
-    color: white; 
+    color: white;
     margin-bottom: 8vh;
     padding-bottom: -150vh;
 }

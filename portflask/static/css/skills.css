@@ -1,32 +1,109 @@
-
-body{
+body {
     background-image: url(img/banner-bg-Photoroom.png);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
 }
 
-.navbar{
-    width: 40%;
-    margin: auto;
+.content-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    background-position: center;
+    
 }
- 
-a:active,a:hover,a:link,a:visited{
+
+.ser-ic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.s1, .s2, .s3, .s4 {
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.s1 img, .s2 img, .s3 img, .s4 img {
+    width: 225px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h3 {
+    color: rgb(146, 145, 142);
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.s1:hover img, .s2:hover img, .s3:hover img, .s4:hover img {
+    transform: scale(1.1);
+}
+
+.s1:hover, .s2:hover, .s3:hover, .s4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+a:active, a:hover, a:link, a:visited {
     color: white;
     text-decoration: none;
 }
 
-.navbar li{
+.navbar {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar li {
     margin-left: 5vw;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 80%;
+    }
+    .navbar li {
+        margin-left: 3vw;
+    }
+}
 
-.service{
+@media screen and (max-width: 480px) {
+    .navbar {
+        width: 90%;
+    }
+    .navbar li {
+        margin-left: 2vw;
+    }
+}
+
+.service {
     width: 80%;
     margin: auto;
     padding-top: 10vh;
 }
 
-.ser-ic{
+@media screen and (max-width: 768px) {
+    .service {
+        width: 90%;
+        padding-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: 95%;
+        padding-top: 3vh;
+    }
+}
+
+.ser-ic {
     text-align: center;
     margin-top: 8vh;
     display: flex;
@@ -35,43 +112,44 @@ a:active,a:hover,a:link,a:visited{
     margin-left: -2vw;
 }
 
-.ser-ic a:hover{
+.ser-ic a:hover {
     color: #000000;
-   
 }
 
-.s1{
+.s1, .s2, .s3, .s4 {
     border: 3px solid rgb(0, 0, 0);
     width: 300px;
     height: 220px;
-
-
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-.s2{
-    border: 3px solid rgb(0, 0, 0);
-    width: 300px;
-    height: 220px;
+.s2 {
     padding-bottom: 100px;
-
 }
 
-.s3{
-    border: 3px solid rgb(7, 7, 7);
-    width: 300px;
-    height: 220px;
-
-
+@media screen and (max-width: 768px) {
+    .s1, .s2, .s3, .s4 {
+        width: 90%;
+        height: auto;
+    }
+    .ser-ic {
+        flex-direction: column;
+        gap: 2vw;
+    }
 }
 
-.s4{
-    border: 3px solid rgb(0, 0, 0);
-    width: 300px;
-    height: 220px;
- 
-
+@media screen and (max-width: 480px) {
+    .s1, .s2, .s3, .s4 {
+        width: 95%;
+        height: auto;
+    }
+    .ser-ic {
+        gap: 1.5vw;
+    }
 }
-.btn1{
+
+.btn1 {
     text-align: center;
     padding: 0.8vw;
     border-radius: 10px;
@@ -79,23 +157,20 @@ a:active,a:hover,a:link,a:visited{
     font-weight: 600;
 }
 
-
-.footer{
+.footer {
     width: 100%;
-    margin-top: 80vh;   
+    margin-top: 80vh;
     background-color: rgb(1, 17, 1);
     height: 200px;
-    
 }
 
-.foot{
+.foot {
     display: flex;
     gap: 2vw;
     justify-content: center;
-   
 }
 
-.f1{
+.f1 {
     width: 50px;
     height: 40px;
     background-color: #000000;
@@ -106,7 +181,31 @@ a:active,a:hover,a:link,a:visited{
     margin-top: 10vh;
 }
 
-.text-5{
+.text-5 {
     margin-top: 4vh;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .f1 {
+        width: 40px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .f1 {
+        width: 35px;
+        height: 30px;
+    }
 }
