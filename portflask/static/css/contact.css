@@ -58,6 +58,7 @@ a:active,a:hover,a:link,a:visited{
     width: 100px;
     background-color: #ff6b08;
     border: none;
+    margin-bottom: 2vh;
 }
 
 .footer{

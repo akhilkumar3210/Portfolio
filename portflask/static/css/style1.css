@@ -187,7 +187,7 @@ body {
     }
 
     .logo-1 {
-        width: 200px;
+        width: 100px;
         height: 205px;
     }
 
@@ -224,7 +224,7 @@ body {
 .about {
     width: 69%;
     margin: auto;
-    margin-bottom: 15vh;
+    margin-bottom: 3vh;
 }
 
 .about h1 {
@@ -320,7 +320,7 @@ h3 {
 .s3,
 .s4 {
     border: 3px solid rgb(46, 46, 46);
-    width: 100%;
+    width: 3        0%;
     max-width: 600px;
     height: auto;
 }
@@ -358,7 +358,7 @@ h3 {
 
 /* Basic styles for each image */
 .img1 {
-    width: 400px;
+    width: 600px;
     height: 400px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
@@ -581,49 +581,115 @@ h3 {
 }
 
 .resume {
-    text-align: center;
-    padding-top: 50px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 0.5s forwards; /* Apply the animation */
 }
 
+/* Keyframes for the fade-in effect */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* General footer styles */
 .footer {
-    width: 100%;
-    margin-top: 80px;
-    background-color: rgb(1, 17, 1);
-    height: auto;
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center text alignment */
+    margin-top: 15vh;
 }
 
+/* Flexbox for the icons */
 .foot {
-    display: flex;
-    gap: 2vw;
-    justify-content: center;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Space between icons */
+    margin-bottom: 15px; /* Space below the icons */
 }
 
+/* Individual icon styles */
 .f1 {
-    width: 50px;
-    height: 40px;
-    /* background-color: #000000; */
-    border-radius: 50%;
-    justify-content: center;
-    padding-left: 1vw;
-    padding-top: 1vh;
-    margin-top: 10vh;
-    color: white;
-    margin-bottom: 8vh;
-    padding-bottom: -150vh;
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-@media (max-width: 768px) {
+/* Icon hover effect */
+.f1 a {
+    color: white; /* Default icon color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.f1 a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Text styles */
+.text-5 p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size for the copyright text */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
     .foot {
-        gap: 2vh;
+        flex-direction: column; /* Stack icons vertically on small screens */
+        align-items: center; /* Center icons */
     }
 
     .f1 {
-        width: 40px;
-        height: 30px;
+        margin-bottom: 10px; /* Space between stacked icons */
     }
 }
-
 .text-5 {
     margin-top: 4vh;
     text-align: center;
+}
+
+.education {
+    background-color: #f9f9f9; /* Light background for contrast */
+    width: 70%;
+    margin: auto;
+    padding: 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  /* Margin above and below the section */
+    animation: fadeIn 0.5s ease; /* Fade-in animation */
+    margin-bottom: 5vh;
+}
+
+/* Heading styles */
+.education h1 {
+    font-size: 24px; /* Size for the main heading */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+/* Year styles */
+.education h5 {
+    font-size: 20px; /* Size for the year headings */
+    margin: 10px 0 5px; /* Space above and below the year */
+    color: #007BFF; /* Blue color for the year */
+}
+
+/* Paragraph styles */
+.education p {
+    font-size: 16px; /* Size for the description text */
+    margin: 0 0 15px; /* Space below the paragraph */
+    color: #555; /* Dark gray color for the text */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(10px); /* Start slightly below */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
 }
