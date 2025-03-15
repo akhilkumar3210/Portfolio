@@ -151,7 +151,7 @@ body {
 .avatar {
     position: relative;
     margin: auto;
-    margin-left: 78%;
+    margin-left: 76%;
     bottom: 30vh;
 
 }
@@ -206,11 +206,12 @@ body {
 
 .social {
     width: 90%;
-    margin: auto;
+    /* margin: auto; */
     margin-top: -10px;
     text-decoration: none;
     justify-content: space-around;
     gap: 3vw;
+    margin-left: -1vh;
     display: flex;
 }
 
@@ -430,8 +431,9 @@ h3 {
 }
 
 .img1 {
-    width: 100%;
+    width: 150%;
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 .port div {
